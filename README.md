@@ -2,10 +2,11 @@
 
 To start your Phoenix server:
 
+  * Make sure you have installed elixir 1.14.0 or above and erlang 23 or above
   * Run `mix setup` to install and setup dependencies
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000/cards`](http://localhost:4000/cards) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
