@@ -1,0 +1,16 @@
+<form action="/new" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="team">Team:</label>
+  <select id="team" name="team_id">
+    <%= for team <- @teams do %>
+      <option value={team.id}><%=team.name%></option>
+    <% end %>
+  </select><br>
+
+  <label for="score">Score:</label>
+  <input type="number" id="score" name="score"><br>
+
+  <input type="submit" value="Enviar">
+</form>
