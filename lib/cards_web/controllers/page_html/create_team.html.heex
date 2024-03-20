@@ -1,6 +1,72 @@
-<form action="/new_team" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name"><br>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 
-  <input type="submit" value="Enviar">
-</form>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
+
+.button1 {background-color: #04AA6D;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+
+</style>
+</head>
+<body>
+
+<h1>Add Team</h1>
+
+<div>
+<br>
+  <form action="/new_team" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <br> 
+    <input class="button button1" type="submit" value="Enviar">
+  </form>
+</div>
+
+</body>
+</html>
